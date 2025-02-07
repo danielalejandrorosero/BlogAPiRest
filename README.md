@@ -1,37 +1,46 @@
-# Blog API Rest
+Nombre del Proyecto
+Una breve descripción de lo que hace tu aplicación Flutter y su propósito.
 
-Blog API Rest es una aplicación backend construida con Node.js, Express, y Prisma. Esta API permite gestionar usuarios, crear cuentas, y manejar publicaciones de blog con autenticación mediante tokens JWT. 
+Tabla de Contenidos
+Características
+Capturas de Pantalla
+Instalación
+Uso
+Contribuciones
+Licencia
+Contacto
+Características
+✔️ Característica 1
+✔️ Característica 2
+✔️ Característica 3
+Capturas de Pantalla
+Aquí puedes incluir algunas capturas de pantalla de tu aplicación:
 
-Además, se incluye una documentación interactiva de la API utilizando [Swagger UI](https://swagger.io/tools/swagger-ui/).
+Pantalla 1 Pantalla 2
 
-## Funcionalidades
+Instalación
+Sigue estos pasos para instalar y ejecutar el proyecto en tu máquina local:
 
-- **Crear cuenta de usuario**: Endpoint para registrar nuevos usuarios.
-- **Obtener usuarios**: Endpoint para obtener todos los usuarios registrados.
-- **Crear publicación**: Endpoint para crear publicaciones de blog.
-- **Autenticación JWT**: Protege las rutas utilizando tokens JWT.
+Clona el repositorio:
+git clone https://github.com/tu_usuario/nombre_del_repositorio.git
+Navega al directorio:
+cd nombre_del_repositorio
+Instala las dependencias:
+flutter pub get
+Uso
+Instrucciones sobre cómo ejecutar la aplicación:
+flutter run
+Contribuciones
+¡Las contribuciones son bienvenidas! Aquí te mostramos cómo puedes contribuir
 
-## Requisitos
-
-- Express
-- npm 
-- Mysql
-- Prisma
-
-## Instalación
-
-1. Clona este repositorio:
-
-   git clone https://github.com/danielalejandrorosero/BlogAPiRest.git
-
-   cd BlogAPiRest
-
-   npm install
-
-
-    JWT_SECRET=miSuperSecretaClave
-    JWT_EXPIRES_IN=3600
-
-    node swagger.js      
-
-
+Haz un fork del repositorio.
+Crea tu rama:
+git checkout -b feature/NuevaCaracteristica
+Realiza tus cambios y haz un commit:
+git commit -m 'Añadir nueva característica'
+Haz push a tu rama:
+git push origin feature/NuevaCaracteristica
+Abre un pull request.
+Contacto
+Tu Nombre - tu_email@example.com
+GitHub: tu_usuario
