@@ -11,19 +11,19 @@ Blog API Rest es una aplicación backend construida con **Node.js**, **Express**
 - **Express**
 - **Prisma**
 - **Swagger UI**
-
+  
 ---
 
 ## 🎯 Funcionalidades
 - 🔑 **Registro de usuarios**  
 - 📝 **Creación de publicaciones**  
-- 🔐 **Protección de rutas con JWT**  
-
+- 🔐 **Protección de rutas con JWT**
+- 
 ---
 
 ## 📸 Capturas de Pantalla
 
-![Swagger UI Screenshot](https://via.placeholder.com/600x300?text=Swagger+UI+Demo)
+![Swagger UI Screenshot](/home/daniel/Documentos/Blog/photos.swagger.jpeg)
 
 ---
 
@@ -33,4 +33,4 @@ Blog API Rest es una aplicación backend construida con **Node.js**, **Express**
 git clone https://github.com/danielalejandrorosero/BlogAPiRest.git
 cd BlogAPiRest
 npm install
-npm start
+node swagger.js
