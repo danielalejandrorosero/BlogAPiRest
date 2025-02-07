@@ -9,7 +9,7 @@ dotenv.config();
 const prisma = new PrismaClient();
 const JWT_SECRET = process.env.JWT_SECRET;
 
-export const getAllUsers = [auth, async (req, res) => {
+export const getAllUsers =  async (req, res) => {
     try {
         const allUsers = await prisma.user.findMany();
 
@@ -21,7 +21,7 @@ export const getAllUsers = [auth, async (req, res) => {
     } catch (error) {
         res.status(500).json({ message: 'Error getting all users', error: error.message });
     }
-}];
+};
 
 export const createAccount = async (req, res) => {
     try {
