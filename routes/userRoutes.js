@@ -1,10 +1,10 @@
 import express from 'express';
-import * as userController from '../controllers/userController.js';
-import verifyToken from '../middlewares/user_auth.js';  // Importar la función por defecto
+import { createAccount, getAllUsers, getUserById } from '../controllers/userController.js';
+
 const router = express.Router();
 
-router.get('/alluser', verifyToken, userController.getAllUsers);
-router.get('/user/:id', verifyToken, userController.getAllUsers);
-router.post('/create-account', userController.createAccount);
+router.post('/create-account', createAccount);
+router.get('/all-users', getAllUsers);
+router.get('/:id', getUserById);
 
 export default router;

@@ -1,6 +1,6 @@
-import Joi from 'joi';  // Cambia a default import
+import Joi from 'joi';
 
-function userValidation(user) {
+const userValidation = (user) => {
     const schema = Joi.object({
         firstName: Joi.string().min(3).max(20).required(),
         lastName: Joi.string().min(3).max(20).required(),
@@ -11,6 +11,6 @@ function userValidation(user) {
     });
 
     return schema.validate(user);
-}
+};
 
-export default { userValidation };
+export default userValidation;

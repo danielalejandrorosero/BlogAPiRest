@@ -2,21 +2,19 @@ import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
 const JWT_SECRET = process.env.JWT_SECRET;
 
-// Middleware para verificar el token
-export default function verifyToken(req, res, next) {
-    const token = req.header('x-auth-token');
-    if (!token) {
-        return res.status(401).send('No token provided');
-    }  
+const verifyToken = (req, res, next) => {
+    const token = req.header('Authorization');
+    if (!token) return res.status(401).json({ message: 'Access denied. No token provided.' });
 
     try {
-        const decodedToken = jwt.verify(token, JWT_SECRET);
-        req.user = decodedToken;
+        const decoded = jwt.verify(token, JWT_SECRET);
+        req.user = decoded;
         next();
-    } catch (err) {
-        res.status(401).send('Invalid token');
+    } catch (error) {
+        res.status(400).json({ message: 'Invalid token.' });
     }
-}
+};
+
+export default verifyToken;
